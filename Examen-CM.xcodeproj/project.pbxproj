@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8CC2E4DB1D7120A600B38E0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2E4DA1D7120A600B38E0C /* main.m */; };
 		8CC2E4DE1D7120A600B38E0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2E4DD1D7120A600B38E0C /* AppDelegate.m */; };
-		8CC2E4E11D7120A600B38E0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2E4E01D7120A600B38E0C /* ViewController.m */; };
+		8CC2E4E11D7120A600B38E0C /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2E4E01D7120A600B38E0C /* Start.m */; };
 		8CC2E4E41D7120A600B38E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2E4E21D7120A600B38E0C /* Main.storyboard */; };
 		8CC2E4E71D7120A600B38E0C /* Examen_CM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2E4E51D7120A600B38E0C /* Examen_CM.xcdatamodeld */; };
 		8CC2E4E91D7120A600B38E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2E4E81D7120A600B38E0C /* Assets.xcassets */; };
@@ -25,8 +25,8 @@
 		8CC2E4DA1D7120A600B38E0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8CC2E4DC1D7120A600B38E0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8CC2E4DD1D7120A600B38E0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8CC2E4DF1D7120A600B38E0C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8CC2E4E01D7120A600B38E0C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8CC2E4DF1D7120A600B38E0C /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
+		8CC2E4E01D7120A600B38E0C /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		8CC2E4E31D7120A600B38E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CC2E4E61D7120A600B38E0C /* Examen_CM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Examen_CM.xcdatamodel; sourceTree = "<group>"; };
 		8CC2E4E81D7120A600B38E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,8 +102,8 @@
 		8CC2E4F31D7120B000B38E0C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8CC2E4DF1D7120A600B38E0C /* ViewController.h */,
-				8CC2E4E01D7120A600B38E0C /* ViewController.m */,
+				8CC2E4DF1D7120A600B38E0C /* Start.h */,
+				8CC2E4E01D7120A600B38E0C /* Start.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -167,6 +167,7 @@
 				TargetAttributes = {
 					8CC2E4D51D7120A500B38E0C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QXF33N93KH;
 					};
 				};
 			};
@@ -255,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CC2E4E11D7120A600B38E0C /* ViewController.m in Sources */,
+				8CC2E4E11D7120A600B38E0C /* Start.m in Sources */,
 				8CC2E4DE1D7120A600B38E0C /* AppDelegate.m in Sources */,
 				8CC2E4DB1D7120A600B38E0C /* main.m in Sources */,
 				8CC2E4E71D7120A600B38E0C /* Examen_CM.xcdatamodeld in Sources */,
@@ -371,6 +372,7 @@
 			baseConfigurationReference = B304ECDE216C7CB2F5DD05B3 /* Pods-Examen-CM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Examen-CM/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "COM.RGO.Examen-CM";
@@ -383,6 +385,7 @@
 			baseConfigurationReference = 11161E687F76F941A329AB3B /* Pods-Examen-CM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Examen-CM/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "COM.RGO.Examen-CM";
