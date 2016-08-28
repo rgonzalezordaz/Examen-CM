@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "OCMapperConfig.h"
+
 @import GoogleMaps;
 
 @interface AppDelegate ()
@@ -20,6 +22,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [OCMapperConfig Configure];
     [GMSServices provideAPIKey:@"AIzaSyCL2M7UhG2rNGWlfLO4rj7imCj4s6WpNdY"];
     return YES;
 }

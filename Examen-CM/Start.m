@@ -41,6 +41,9 @@
 - (void)mapView:(GMSMapView *)mapView
 didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
     NSLog(@"You tapped at %f,%f", coordinate.latitude, coordinate.longitude);
+    Lat = coordinate.latitude;
+    Long = coordinate.longitude;
+    print(NSLog(@"La Latitud es : %f y la Longitud es : %f", Lat, Long));
 }
 
     // Do any additional setup after loading the view, typically from a nib.
