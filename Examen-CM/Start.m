@@ -44,6 +44,7 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
     Lat = coordinate.latitude;
     Long = coordinate.longitude;
     print(NSLog(@"La Latitud es : %f y la Longitud es : %f", Lat, Long));
+    [self performSegueWithIdentifier:@"Clima" sender:self];
 }
 
     // Do any additional setup after loading the view, typically from a nib.
@@ -52,5 +53,13 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"Clima"]){
+        ClimaViewController *ClimaController = [segue destinationViewController];
+    }
+}
+
 
 @end

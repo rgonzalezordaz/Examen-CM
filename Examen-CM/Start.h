@@ -8,9 +8,10 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import <UIKit/UIKit.h>
 #import "Declarations.h"
+#import "ClimaViewController.h"
 
 @interface Start : UIViewController <GMSMapViewDelegate>
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 
 @end
 
