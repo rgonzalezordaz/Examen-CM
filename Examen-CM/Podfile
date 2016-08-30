@@ -5,4 +5,5 @@ project '/Users/Ricardo/Documents/Xcode Codes/Examen-CM/Examen-CM.xcodeproj'
 
 target 'Examen-CM' do
 pod 'GoogleMaps'
+pod 'PayPal-iOS-SDK'
 end

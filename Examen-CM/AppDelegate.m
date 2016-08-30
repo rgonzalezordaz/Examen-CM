@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "OCMapperConfig.h"
+#import "PayPalMobile.h"
 
 @import GoogleMaps;
 
@@ -24,6 +25,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [OCMapperConfig Configure];
     [GMSServices provideAPIKey:@"AIzaSyCL2M7UhG2rNGWlfLO4rj7imCj4s6WpNdY"];
+    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentSandbox : @"YOUR_CLIENT_ID_FOR_SANDBOX"}];
     return YES;
 }
 

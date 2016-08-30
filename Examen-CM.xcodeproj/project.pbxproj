@@ -19,6 +19,7 @@
 		8CE96FE01D73694F00AA94F6 /* ObjectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE96FDF1D73694F00AA94F6 /* ObjectResponse.m */; };
 		8CE96FE31D736AD000AA94F6 /* Coord.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE96FE21D736AD000AA94F6 /* Coord.m */; };
 		8CE96FE61D7372CE00AA94F6 /* MainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE96FE51D7372CE00AA94F6 /* MainObject.m */; };
+		8CEEF0451D76057800D5CB0D /* ProductosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEEF0441D76057800D5CB0D /* ProductosTableViewController.m */; };
 		8CEFCD841D7209080037DE4A /* NSDictionary+ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEFCD6D1D7209080037DE4A /* NSDictionary+ObjectMapper.m */; };
 		8CEFCD851D7209080037DE4A /* NSObject+ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEFCD6F1D7209080037DE4A /* NSObject+ObjectMapper.m */; };
 		8CEFCD861D7209080037DE4A /* ManagedObjectInstanceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEFCD731D7209080037DE4A /* ManagedObjectInstanceProvider.m */; };
@@ -47,6 +48,19 @@
 		8CF4189E1D751DAF00A2C2DC /* Lluvioso.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF4189A1D751DAF00A2C2DC /* Lluvioso.png */; };
 		8CF4189F1D751DAF00A2C2DC /* Nublado.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF4189B1D751DAF00A2C2DC /* Nublado.png */; };
 		8CF418A01D751DAF00A2C2DC /* Soleado.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF4189C1D751DAF00A2C2DC /* Soleado.png */; };
+		8CF94DA61D76268C00B27FAF /* VentaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF94DA51D76268C00B27FAF /* VentaViewController.m */; };
+		8CF94DAB1D762A6F00B27FAF /* ProductoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF94DA91D762A6F00B27FAF /* ProductoCell.m */; };
+		8CF94DAC1D762A6F00B27FAF /* ProductoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF94DAA1D762A6F00B27FAF /* ProductoCell.xib */; };
+		8CF94DB81D7631DD00B27FAF /* Boina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CF94DAE1D7631DD00B27FAF /* Boina.jpg */; };
+		8CF94DB91D7631DD00B27FAF /* CamisaBlanca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CF94DAF1D7631DD00B27FAF /* CamisaBlanca.jpg */; };
+		8CF94DBA1D7631DD00B27FAF /* CamisaPE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CF94DB01D7631DD00B27FAF /* CamisaPE.jpg */; };
+		8CF94DBB1D7631DD00B27FAF /* LentesLacoste.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CF94DB11D7631DD00B27FAF /* LentesLacoste.jpg */; };
+		8CF94DBC1D7631DD00B27FAF /* PantalonDockers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CF94DB21D7631DD00B27FAF /* PantalonDockers.jpg */; };
+		8CF94DBD1D7631DD00B27FAF /* PantalonLevis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CF94DB31D7631DD00B27FAF /* PantalonLevis.jpg */; };
+		8CF94DBE1D7631DD00B27FAF /* PerfumeLacoste.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CF94DB41D7631DD00B27FAF /* PerfumeLacoste.jpg */; };
+		8CF94DBF1D7631DD00B27FAF /* PerfumePE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CF94DB51D7631DD00B27FAF /* PerfumePE.jpg */; };
+		8CF94DC01D7631DD00B27FAF /* PlayeraAtlas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CF94DB61D7631DD00B27FAF /* PlayeraAtlas.jpg */; };
+		8CF94DC11D7631DD00B27FAF /* PlayeraChivas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CF94DB71D7631DD00B27FAF /* PlayeraChivas.jpg */; };
 		C7B0747162048440021D7845 /* Pods_Examen_CM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D49C2545FA9A6B60320485 /* Pods_Examen_CM.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +78,7 @@
 		8CC2E4E81D7120A600B38E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CC2E4EB1D7120A600B38E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CC2E4ED1D7120A600B38E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CC2E4F61D7120F400B38E0C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		8CC2E4F61D7120F400B38E0C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8CE96FDA1D73655000AA94F6 /* ClimaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClimaViewController.h; sourceTree = "<group>"; };
 		8CE96FDB1D73655000AA94F6 /* ClimaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClimaViewController.m; sourceTree = "<group>"; };
 		8CE96FDE1D73694F00AA94F6 /* ObjectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectResponse.h; sourceTree = "<group>"; };
@@ -73,6 +87,8 @@
 		8CE96FE21D736AD000AA94F6 /* Coord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coord.m; sourceTree = "<group>"; };
 		8CE96FE41D7372CE00AA94F6 /* MainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainObject.h; sourceTree = "<group>"; };
 		8CE96FE51D7372CE00AA94F6 /* MainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainObject.m; sourceTree = "<group>"; };
+		8CEEF0431D76057800D5CB0D /* ProductosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductosTableViewController.h; sourceTree = "<group>"; };
+		8CEEF0441D76057800D5CB0D /* ProductosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductosTableViewController.m; sourceTree = "<group>"; };
 		8CEFCD6C1D7209080037DE4A /* NSDictionary+ObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ObjectMapper.h"; sourceTree = "<group>"; };
 		8CEFCD6D1D7209080037DE4A /* NSDictionary+ObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ObjectMapper.m"; sourceTree = "<group>"; };
 		8CEFCD6E1D7209080037DE4A /* NSObject+ObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ObjectMapper.h"; sourceTree = "<group>"; };
@@ -130,6 +146,21 @@
 		8CF4189A1D751DAF00A2C2DC /* Lluvioso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lluvioso.png; sourceTree = "<group>"; };
 		8CF4189B1D751DAF00A2C2DC /* Nublado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nublado.png; sourceTree = "<group>"; };
 		8CF4189C1D751DAF00A2C2DC /* Soleado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soleado.png; sourceTree = "<group>"; };
+		8CF94DA41D76268C00B27FAF /* VentaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentaViewController.h; sourceTree = "<group>"; };
+		8CF94DA51D76268C00B27FAF /* VentaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VentaViewController.m; sourceTree = "<group>"; };
+		8CF94DA81D762A6F00B27FAF /* ProductoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductoCell.h; sourceTree = "<group>"; };
+		8CF94DA91D762A6F00B27FAF /* ProductoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductoCell.m; sourceTree = "<group>"; };
+		8CF94DAA1D762A6F00B27FAF /* ProductoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductoCell.xib; sourceTree = "<group>"; };
+		8CF94DAE1D7631DD00B27FAF /* Boina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boina.jpg; sourceTree = "<group>"; };
+		8CF94DAF1D7631DD00B27FAF /* CamisaBlanca.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CamisaBlanca.jpg; sourceTree = "<group>"; };
+		8CF94DB01D7631DD00B27FAF /* CamisaPE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CamisaPE.jpg; sourceTree = "<group>"; };
+		8CF94DB11D7631DD00B27FAF /* LentesLacoste.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LentesLacoste.jpg; sourceTree = "<group>"; };
+		8CF94DB21D7631DD00B27FAF /* PantalonDockers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PantalonDockers.jpg; sourceTree = "<group>"; };
+		8CF94DB31D7631DD00B27FAF /* PantalonLevis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PantalonLevis.jpg; sourceTree = "<group>"; };
+		8CF94DB41D7631DD00B27FAF /* PerfumeLacoste.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PerfumeLacoste.jpg; sourceTree = "<group>"; };
+		8CF94DB51D7631DD00B27FAF /* PerfumePE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PerfumePE.jpg; sourceTree = "<group>"; };
+		8CF94DB61D7631DD00B27FAF /* PlayeraAtlas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PlayeraAtlas.jpg; sourceTree = "<group>"; };
+		8CF94DB71D7631DD00B27FAF /* PlayeraChivas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PlayeraChivas.jpg; sourceTree = "<group>"; };
 		B304ECDE216C7CB2F5DD05B3 /* Pods-Examen-CM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examen-CM.debug.xcconfig"; path = "Examen-CM/Pods/Target Support Files/Pods-Examen-CM/Pods-Examen-CM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +206,8 @@
 		8CC2E4D81D7120A600B38E0C /* Examen-CM */ = {
 			isa = PBXGroup;
 			children = (
+				8CF94DAD1D7631DD00B27FAF /* ImagenesProductos */,
+				8CF94DA71D762A4700B27FAF /* Cells */,
 				8CF418981D751DAF00A2C2DC /* Imagenes */,
 				8CE96FDD1D73692A00AA94F6 /* Classes */,
 				8CEFCD981D721CC70037DE4A /* json */,
@@ -207,6 +240,10 @@
 				8CC2E4E01D7120A600B38E0C /* Start.m */,
 				8CE96FDA1D73655000AA94F6 /* ClimaViewController.h */,
 				8CE96FDB1D73655000AA94F6 /* ClimaViewController.m */,
+				8CEEF0431D76057800D5CB0D /* ProductosTableViewController.h */,
+				8CEEF0441D76057800D5CB0D /* ProductosTableViewController.m */,
+				8CF94DA41D76268C00B27FAF /* VentaViewController.h */,
+				8CF94DA51D76268C00B27FAF /* VentaViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -359,6 +396,33 @@
 			path = Imagenes;
 			sourceTree = "<group>";
 		};
+		8CF94DA71D762A4700B27FAF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8CF94DA81D762A6F00B27FAF /* ProductoCell.h */,
+				8CF94DA91D762A6F00B27FAF /* ProductoCell.m */,
+				8CF94DAA1D762A6F00B27FAF /* ProductoCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		8CF94DAD1D7631DD00B27FAF /* ImagenesProductos */ = {
+			isa = PBXGroup;
+			children = (
+				8CF94DAE1D7631DD00B27FAF /* Boina.jpg */,
+				8CF94DAF1D7631DD00B27FAF /* CamisaBlanca.jpg */,
+				8CF94DB01D7631DD00B27FAF /* CamisaPE.jpg */,
+				8CF94DB11D7631DD00B27FAF /* LentesLacoste.jpg */,
+				8CF94DB21D7631DD00B27FAF /* PantalonDockers.jpg */,
+				8CF94DB31D7631DD00B27FAF /* PantalonLevis.jpg */,
+				8CF94DB41D7631DD00B27FAF /* PerfumeLacoste.jpg */,
+				8CF94DB51D7631DD00B27FAF /* PerfumePE.jpg */,
+				8CF94DB61D7631DD00B27FAF /* PlayeraAtlas.jpg */,
+				8CF94DB71D7631DD00B27FAF /* PlayeraChivas.jpg */,
+			);
+			path = ImagenesProductos;
+			sourceTree = "<group>";
+		};
 		982E093F56933290D78CABD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,14 +492,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF94DBE1D7631DD00B27FAF /* PerfumeLacoste.jpg in Resources */,
 				8CF4189E1D751DAF00A2C2DC /* Lluvioso.png in Resources */,
+				8CF94DB81D7631DD00B27FAF /* Boina.jpg in Resources */,
 				8CC2E4EC1D7120A600B38E0C /* LaunchScreen.storyboard in Resources */,
 				8CC2E4E91D7120A600B38E0C /* Assets.xcassets in Resources */,
+				8CF94DBB1D7631DD00B27FAF /* LentesLacoste.jpg in Resources */,
+				8CF94DB91D7631DD00B27FAF /* CamisaBlanca.jpg in Resources */,
 				8CF4189D1D751DAF00A2C2DC /* Frio.png in Resources */,
+				8CF94DBD1D7631DD00B27FAF /* PantalonLevis.jpg in Resources */,
+				8CF94DC11D7631DD00B27FAF /* PlayeraChivas.jpg in Resources */,
 				8CF4189F1D751DAF00A2C2DC /* Nublado.png in Resources */,
 				8CF418A01D751DAF00A2C2DC /* Soleado.png in Resources */,
+				8CF94DBF1D7631DD00B27FAF /* PerfumePE.jpg in Resources */,
 				8CC2E4F71D7120F400B38E0C /* Podfile in Resources */,
 				8CC2E4E41D7120A600B38E0C /* Main.storyboard in Resources */,
+				8CF94DBA1D7631DD00B27FAF /* CamisaPE.jpg in Resources */,
+				8CF94DBC1D7631DD00B27FAF /* PantalonDockers.jpg in Resources */,
+				8CF94DC01D7631DD00B27FAF /* PlayeraAtlas.jpg in Resources */,
+				8CF94DAC1D762A6F00B27FAF /* ProductoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,13 +574,16 @@
 				8CEFCDBC1D721CC70037DE4A /* SBJsonUTF8Stream.m in Sources */,
 				8CE96FE61D7372CE00AA94F6 /* MainObject.m in Sources */,
 				8CEFCDB91D721CC70037DE4A /* SBJsonStreamWriterAccumulator.m in Sources */,
+				8CEEF0451D76057800D5CB0D /* ProductosTableViewController.m in Sources */,
 				8CE96FE31D736AD000AA94F6 /* Coord.m in Sources */,
 				8CEFCD911D720D7C0037DE4A /* WebServices.m in Sources */,
 				8CEFCD891D7209080037DE4A /* InCodeMappingProvider.m in Sources */,
 				8CEFCDB21D721CC70037DE4A /* NSObject+SBJson.m in Sources */,
 				8CEFCD941D720D9E0037DE4A /* Parser.m in Sources */,
 				8CC2E4DE1D7120A600B38E0C /* AppDelegate.m in Sources */,
+				8CF94DAB1D762A6F00B27FAF /* ProductoCell.m in Sources */,
 				8CEFCD871D7209080037DE4A /* ObjectInstanceProvider.m in Sources */,
+				8CF94DA61D76268C00B27FAF /* VentaViewController.m in Sources */,
 				8CEFCDB61D721CC70037DE4A /* SBJsonStreamParserAdapter.m in Sources */,
 				8CC2E4DB1D7120A600B38E0C /* main.m in Sources */,
 				8CEFCDB41D721CC70037DE4A /* SBJsonStreamParser.m in Sources */,
