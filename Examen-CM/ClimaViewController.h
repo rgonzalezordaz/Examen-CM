@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WebServices.h"
 #import "Declarations.h"
+#import "Start.h"
 
 @interface ClimaViewController : UIViewController
 - (void)loadData;
@@ -20,5 +21,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *PressureValue;
 @property (strong, nonatomic) IBOutlet UIImageView *WeatherImage;
+@property (strong, nonatomic) IBOutlet UILabel *TempMin;
+@property (strong, nonatomic) IBOutlet UILabel *TempMax;
 
 @end

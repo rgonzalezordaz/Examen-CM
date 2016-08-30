@@ -21,8 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-33.86
-                                                            longitude:151.20
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:20.670000
+                                                            longitude:-103.330002
                                                                  zoom:6];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     mapView_.myLocationEnabled = YES;
@@ -30,11 +30,7 @@
     self.view = mapView_;
     
     // Creates a marker in the center of the map.
-    GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.position = CLLocationCoordinate2DMake(-33.86, 151.20);
-    marker.title = @"Sydney";
-    marker.snippet = @"Australia";
-    marker.map = mapView_;
+
 
 }
 
@@ -44,6 +40,9 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
     Lat = coordinate.latitude;
     Long = coordinate.longitude;
     print(NSLog(@"La Latitud es : %f y la Longitud es : %f", Lat, Long));
+    GMSMarker *marker = [[GMSMarker alloc] init];
+    marker.position = CLLocationCoordinate2DMake(Lat, Long);
+    marker.map = mapView_;
     [self performSegueWithIdentifier:@"Clima" sender:self];
 }
 

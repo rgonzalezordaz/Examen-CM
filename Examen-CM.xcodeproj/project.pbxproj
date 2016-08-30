@@ -43,6 +43,10 @@
 		8CEFCDBB1D721CC70037DE4A /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEFCDAD1D721CC70037DE4A /* SBJsonTokeniser.m */; };
 		8CEFCDBC1D721CC70037DE4A /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEFCDAF1D721CC70037DE4A /* SBJsonUTF8Stream.m */; };
 		8CEFCDBD1D721CC70037DE4A /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEFCDB11D721CC70037DE4A /* SBJsonWriter.m */; };
+		8CF4189D1D751DAF00A2C2DC /* Frio.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF418991D751DAF00A2C2DC /* Frio.png */; };
+		8CF4189E1D751DAF00A2C2DC /* Lluvioso.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF4189A1D751DAF00A2C2DC /* Lluvioso.png */; };
+		8CF4189F1D751DAF00A2C2DC /* Nublado.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF4189B1D751DAF00A2C2DC /* Nublado.png */; };
+		8CF418A01D751DAF00A2C2DC /* Soleado.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF4189C1D751DAF00A2C2DC /* Soleado.png */; };
 		C7B0747162048440021D7845 /* Pods_Examen_CM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D49C2545FA9A6B60320485 /* Pods_Examen_CM.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +126,10 @@
 		8CEFCDAF1D721CC70037DE4A /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		8CEFCDB01D721CC70037DE4A /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		8CEFCDB11D721CC70037DE4A /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		8CF418991D751DAF00A2C2DC /* Frio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frio.png; sourceTree = "<group>"; };
+		8CF4189A1D751DAF00A2C2DC /* Lluvioso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lluvioso.png; sourceTree = "<group>"; };
+		8CF4189B1D751DAF00A2C2DC /* Nublado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nublado.png; sourceTree = "<group>"; };
+		8CF4189C1D751DAF00A2C2DC /* Soleado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soleado.png; sourceTree = "<group>"; };
 		B304ECDE216C7CB2F5DD05B3 /* Pods-Examen-CM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examen-CM.debug.xcconfig"; path = "Examen-CM/Pods/Target Support Files/Pods-Examen-CM/Pods-Examen-CM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +175,7 @@
 		8CC2E4D81D7120A600B38E0C /* Examen-CM */ = {
 			isa = PBXGroup;
 			children = (
+				8CF418981D751DAF00A2C2DC /* Imagenes */,
 				8CE96FDD1D73692A00AA94F6 /* Classes */,
 				8CEFCD981D721CC70037DE4A /* json */,
 				8CEFCD6A1D7209080037DE4A /* ocmapper */,
@@ -339,6 +348,17 @@
 			path = json;
 			sourceTree = "<group>";
 		};
+		8CF418981D751DAF00A2C2DC /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				8CF418991D751DAF00A2C2DC /* Frio.png */,
+				8CF4189A1D751DAF00A2C2DC /* Lluvioso.png */,
+				8CF4189B1D751DAF00A2C2DC /* Nublado.png */,
+				8CF4189C1D751DAF00A2C2DC /* Soleado.png */,
+			);
+			path = Imagenes;
+			sourceTree = "<group>";
+		};
 		982E093F56933290D78CABD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,8 +428,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF4189E1D751DAF00A2C2DC /* Lluvioso.png in Resources */,
 				8CC2E4EC1D7120A600B38E0C /* LaunchScreen.storyboard in Resources */,
 				8CC2E4E91D7120A600B38E0C /* Assets.xcassets in Resources */,
+				8CF4189D1D751DAF00A2C2DC /* Frio.png in Resources */,
+				8CF4189F1D751DAF00A2C2DC /* Nublado.png in Resources */,
+				8CF418A01D751DAF00A2C2DC /* Soleado.png in Resources */,
 				8CC2E4F71D7120F400B38E0C /* Podfile in Resources */,
 				8CC2E4E41D7120A600B38E0C /* Main.storyboard in Resources */,
 			);

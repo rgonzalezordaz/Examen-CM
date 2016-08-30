@@ -55,14 +55,20 @@
         
         MainObject *mainObject          = object.main;
         float tempCelsius               = mainObject.temp - 273.15;
+        if(tempCelsius <18){
+            self.WeatherImage.image = [UIImage imageNamed:@"Frio.png"];
+        } else if (tempCelsius >= 18){
+            self.WeatherImage.image = [UIImage imageNamed:@"Soleado.png"];
+        }
         
         self.TempValue.text          = [NSString stringWithFormat:@"%.1f", tempCelsius];
         self.TempValue.text          = [self.TempValue.text  stringByAppendingString:@" ºC"];
         self.PressureValue.text      = [NSString stringWithFormat:@"%f", mainObject.pressure];
         self.HumidityValue.text      = [NSString stringWithFormat:@"%f", mainObject.humidity];
+
+        self.TempMin.text       = [NSString stringWithFormat:@"%f", mainObject.temp_min];
+        self.TempMax.text       = [NSString stringWithFormat:@"%f", mainObject.temp_max];
         /*
-        self.lblTempMinValue.text       = [NSString stringWithFormat:@"%f", mainObject.temp_min];
-        self.lblTempMaxValue.text       = [NSString stringWithFormat:@"%f", mainObject.temp_max];
         self.lblSeaLevelValue.text      = [NSString stringWithFormat:@"%f", mainObject.sea_level];
         self.lblGroundLevel.text        = [NSString stringWithFormat:@"%f", mainObject.grnd_level];
         */
@@ -73,6 +79,5 @@
         [self.activityLoad stopAnimating];
     });
 }
-
 
 @end
