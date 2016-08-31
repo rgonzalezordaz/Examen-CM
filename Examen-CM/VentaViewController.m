@@ -111,7 +111,19 @@
     // the confirmation and try again later.
 }
 
+- (void)payPalPaymentViewController:(PayPalPaymentViewController *)paymentViewController
+                 didCompletePayment:(PayPalPayment *)completedPayment {
+    // Payment was processed successfully; send to server for verification and fulfillment.
+    [self verifyCompletedPayment:completedPayment];
+    
+    // Dismiss the PayPalPaymentViewController.
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
+- (void)payPalPaymentDidCancel:(PayPalPaymentViewController *)paymentViewController {
+    // The payment was canceled; dismiss the PayPalPaymentViewController.
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 
