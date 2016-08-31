@@ -11,7 +11,11 @@
 @interface ProductosTableViewController ()
 @property NSMutableArray *imageProducts;
 @property NSMutableArray *productId;
-@property NSMutableArray *precios;
+@property NSMutableArray *prices;
+@property NSString *product;
+@property NSString *image;
+@property NSNumber *Price;
+
 @end
 
 
@@ -29,7 +33,7 @@
     
     self.productId   = [[NSMutableArray alloc] initWithObjects: @"Camisa blanca", @"Pefurme Lacoste", @"Pantalon Dockers", @"Pantalon Levis", @"Lentes Lacoste", @"Camisa Perry Ellis", @"Boina", @"Perfume Perry Ellis", @"Playera Chivas", @"Playera Atlas" , nil];
     
-    self.precios   = [[NSMutableArray alloc] initWithObjects: @600, @1200, @1000, @899, @3500, @999, @600, @699, @1199, @1099 , nil];
+    self.prices   = [[NSMutableArray alloc] initWithObjects: @600, @1200, @1000, @899, @3500, @999, @600, @699, @1199, @1099 , nil];
 
 
 }
@@ -64,9 +68,30 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"ProductoCell"];
     }
     //Fill cell with info from arrays
+    
     cell.lblProduct.text       = self.productId[indexPath.row];
     cell.ImageProduct.image   = [UIImage imageNamed:self.imageProducts[indexPath.row]];
+    cell.lblPrice.text          = [NSString stringWithFormat:@"%@", self.prices[indexPath.row]];
+    cell.btnBuy.tag = indexPath.row;
+    [cell.btnBuy addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     
     return cell;
+}
+
+-(void)yourButtonClicked:(UIButton*)sender
+{
+self.product = self.productId[sender.tag];
+self.image = self.imageProducts[sender.tag];
+self.Price = self.prices[sender.tag];
+[self performSegueWithIdentifier:@"toVenta" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"toVenta"]){
+        VentaViewController *VentaController = [segue destinationViewController];
+        VentaController.ProductSelected = self.product;
+        VentaController.ImageProductSelected = self.image;
+        VentaController.priceSelected = self.Price;
+    }
 }
 @end

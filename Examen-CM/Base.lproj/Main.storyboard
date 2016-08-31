@@ -45,7 +45,7 @@
         <scene sceneID="RDs-Q0-EFi">
             <objects>
                 <tableViewController id="luc-MS-U0s" customClass="ProductosTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="MnW-0p-9Ja">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="9" sectionHeaderHeight="28" sectionFooterHeight="28" id="MnW-0p-9Ja">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -55,6 +55,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Products" id="fBa-6N-ncc"/>
+                    <connections>
+                        <segue destination="bWV-By-iY9" kind="push" identifier="toVenta" id="5K7-8p-KoQ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E0M-WR-eAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,12 +70,46 @@
                     <view key="view" contentMode="scaleToFill" id="1VQ-fg-ilg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4ZU-1p-qD1">
+                                <rect key="frame" x="65" y="96" width="191" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ryN-s5-doZ">
+                                <rect key="frame" x="20" y="297" width="249" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HvK-SY-fTp">
+                                <rect key="frame" x="20" y="326" width="249" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wYe-6o-TN2">
+                                <rect key="frame" x="90" y="406" width="140" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Buy with PayPal"/>
+                                <connections>
+                                    <action selector="pay" destination="bWV-By-iY9" eventType="touchUpInside" id="kyu-ig-wcy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tKX-bT-zVs"/>
+                    <connections>
+                        <outlet property="ImageProduct" destination="4ZU-1p-qD1" id="JBT-9Q-tmC"/>
+                        <outlet property="Price" destination="HvK-SY-fTp" id="Sit-22-MtY"/>
+                        <outlet property="ProductId" destination="ryN-s5-doZ" id="f6z-rg-uc7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="veX-Jg-T9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476" y="-643"/>
+            <point key="canvasLocation" x="1495" y="-643"/>
         </scene>
         <!--Pay Pal-->
         <scene sceneID="hZf-fZ-v8F">

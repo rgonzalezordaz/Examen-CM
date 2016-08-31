@@ -66,12 +66,11 @@
         self.PressureValue.text      = [NSString stringWithFormat:@"%f", mainObject.pressure];
         self.HumidityValue.text      = [NSString stringWithFormat:@"%f", mainObject.humidity];
 
-        self.TempMin.text       = [NSString stringWithFormat:@"%f", mainObject.temp_min];
-        self.TempMax.text       = [NSString stringWithFormat:@"%f", mainObject.temp_max];
-        /*
-        self.lblSeaLevelValue.text      = [NSString stringWithFormat:@"%f", mainObject.sea_level];
-        self.lblGroundLevel.text        = [NSString stringWithFormat:@"%f", mainObject.grnd_level];
-        */
+        self.TempMin.text       = [NSString stringWithFormat:@"%.1f", mainObject.temp_min - 273.15];
+        self.TempMin.text       = [self.TempMin.text  stringByAppendingString:@" ºC"];
+        self.TempMax.text       = [NSString stringWithFormat:@"%.1f", mainObject.temp_max - 273.15];
+        self.TempMax.text       = [self.TempMax.text  stringByAppendingString:@" ºC"];
+        
         self.CityValue.text          = stName;
          
         print(NSLog(@"We are at %@ with latitude %f and longitude %f",stName, lat, lng))

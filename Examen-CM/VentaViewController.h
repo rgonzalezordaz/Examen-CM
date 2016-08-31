@@ -11,4 +11,12 @@
 
 @interface VentaViewController : UIViewController <PayPalPaymentDelegate>
 
+@property NSString *ProductSelected;
+@property NSString *ImageProductSelected;
+@property NSNumber *priceSelected;
+
+@property (strong, nonatomic) IBOutlet UIImageView *ImageProduct;
+@property (strong, nonatomic) IBOutlet UILabel *ProductId;
+@property (strong, nonatomic) IBOutlet UILabel *Price;
+
 @end

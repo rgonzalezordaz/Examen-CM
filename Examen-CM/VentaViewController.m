@@ -41,6 +41,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.ImageProduct.image = [UIImage imageNamed:self.ImageProductSelected];
+    self.ProductId.text = self.ProductSelected;
+    self.Price.text = [NSString stringWithFormat:@"%@", self.priceSelected];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -54,9 +58,9 @@
     PayPalPayment *payment = [[PayPalPayment alloc] init];
     
     // Amount, currency, and description
-    payment.amount = [[NSDecimalNumber alloc] initWithString:@"120.00"];
+    payment.amount = self.priceSelected;
     payment.currencyCode = @"MXN";
-    payment.shortDescription = @"Camisa blanca";
+    payment.shortDescription = self.ProductSelected;
     
     // Use the intent property to indicate that this is a "sale" payment,
     // meaning combined Authorization + Capture.
@@ -91,6 +95,20 @@
     
     // Present the PayPalPaymentViewController.
     [self presentViewController:paymentViewController animated:YES completion:nil];
+}
+- (void)verifyCompletedPayment:(PayPalPayment *)completedPayment {
+    // Send the entire confirmation dictionary
+    NSData *confirmation = [NSJSONSerialization dataWithJSONObject:completedPayment.confirmation
+                                                           options:0
+                                                             error:nil];
+    
+    NSLog(@"completedPayment = %@", completedPayment);
+    NSLog(@"completedPayment.confirmation = %@", completedPayment.confirmation);
+    NSLog(@"confirmation = %@", confirmation);
+    
+    // Send confirmation to your server; your server should verify the proof of payment
+    // and give the user their goods or services. If the server is not reachable, save
+    // the confirmation and try again later.
 }
 
 

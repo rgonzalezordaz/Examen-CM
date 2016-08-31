@@ -13,6 +13,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblProduct;
 @property (strong, nonatomic) IBOutlet UILabel *lblPrice;
 @property (strong, nonatomic) IBOutlet UIButton *btnBuy;
-- (IBAction)btnBuyPressed:(id)sender;
+
 
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ProductoCell.h"
+#import "VentaViewController.h"
 
 
 @interface ProductosTableViewController : UITableViewController 

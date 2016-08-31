@@ -43,8 +43,18 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
     GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake(Lat, Long);
     marker.map = mapView_;
-    [self performSegueWithIdentifier:@"Clima" sender:self];
+    marker.title =@"Click to check weather";
+
 }
+-(BOOL) mapView:(GMSMapView *) mapView didTapMarker:(GMSMarker *)marker
+{
+    print(NSLog(@"Marker clicked"));
+    Lat = marker.position.latitude;
+    Long = marker.position.longitude;
+    [self performSegueWithIdentifier:@"Clima" sender:self];
+    return YES;
+}
+
 
     // Do any additional setup after loading the view, typically from a nib.
 

@@ -29,9 +29,6 @@
                         <state key="normal" title="Comprar">
                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
-                        <connections>
-                            <action selector="btnBuyPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4EE-gT-Uva"/>
-                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snB-GO-bXQ" userLabel="Price">
                         <rect key="frame" x="123" y="52" width="42" height="21"/>
